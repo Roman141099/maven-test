@@ -13,12 +13,15 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 
-@Slf4j
+
 public class SimpleServlet extends HttpServlet {
+
+    Logger LOG = LoggerFactory.getLogger("servlettutorial");
 
 
     public void init() throws ServletException {
-        log.info("Servlet initialized");
+        LOG.info("Servlet initialized");
+        LOG.debug("Hello");
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
