@@ -1,8 +1,8 @@
 ines (18 sloc)  278 Bytes
-
+/target/
 # Compiled class file
 *.class
-
+.idea
 # Log file
 *.log
 
