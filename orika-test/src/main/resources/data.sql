@@ -1,0 +1,1 @@
+insert into man (id) values ('123');
