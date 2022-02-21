@@ -8,13 +8,11 @@ import ma.glasnost.orika.MapperFactory;
 import org.springframework.stereotype.Component;
 
 @Component
-@PropertySource("classpath:application.yaml")
 public class PersonMapper extends AbstractMapper{
 
     @Override
     public void configure(MapperFactory mapperFactory) {
         mapperFactory.classMap(Person.class, Personne.class)
-                .mapNulls(false)
                 .exclude("toExclude")
                 .field("personName", "personneName")
                 .field("personAge", "personneAge")
